@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
+
 .bl{
   border-left: 1px solid;
 }
@@ -20,3 +21,14 @@ code {
 
   
 }
+
+.butt{
+  border-left: 1px solid;
+}
+
+a{
+  text-decoration:none;
+  color: black;
+}
+
+
