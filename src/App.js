@@ -15,12 +15,12 @@ import {
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/pagedetailed" element={<Home />} />
       <Route path="foryou" element={<ForYou />} />
       <Route path="/assets" element={<Assets />} />
       <Route path="/discover" element={<Discover />} />
       <Route path="/jobs" element={<Jobs />} />
-      <Route path="/pagedetailed" element={<PageDetailed />} />
+      <Route path="/" element={<PageDetailed />} />
       <Route path="/hire" element={<Hire />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/login" element={<Login />} />
