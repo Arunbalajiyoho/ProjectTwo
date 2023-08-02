@@ -11,4 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* .swiper {
+  width: 600px;
+  height: 300px;
+} */
+
+
+.bl{
+  border-left: 1px solid;
+}
+
+.hov{
+
+  
+}
+
+.butt{
+  border-left: 1px solid;
+}
+
+a{
+  text-decoration:none;
+  color: black;
+}
+
 
