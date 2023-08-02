@@ -11,4 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.backgroundimage{
+   background-image: url("https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&w=1560&h=1150&dpr=1");
+  width: 1480px;
+  height: 745px;
+  background-position: center;
+  background-color: black;
+
+}
+.submit{
+  border-bottom: 1px solid blue;
+  border-top:0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.form{
+  border-radius: 15px;
+  width: 50px;
+}
+/* Signup */
+.back{
+  background-image: url("https://images.pexels.com/photos/14038834/pexels-photo-14038834.jpeg?auto=compress&cs=tinysrgb&w=2060&h=980&dpr=1");
+ width: 1480px;
+ height: 745px;
+ background-position: center;
+ background-color: black;
+
+}
+
 
