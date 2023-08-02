@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
 
-const Jobs = () => {
-  return (
-    <div>Jobs</div>
-  )
-}
+import Jobsnavbar from "../components/Jobsnavbar";
+import Freelance from "../components/Freelance";
 
-export default Jobs
+
+
+
+
+const Jobs =()=>{
+  return(
+    <div>
+     <Jobsnavbar/>
+     <Freelance/>
+    
+    </div>
+  );
+}; 
+export default Jobs;
