@@ -1041,3 +1041,7 @@ const HomeCategory = [
     categoryName: "Projects",
   },
 ];
+
+
+
+export default {HomeCategory}

@@ -24,10 +24,14 @@ import Dropdown from "react-bootstrap/Dropdown";
 import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import dummy from "../constants/index";
+
 const Home = () => {
   const [isHovering, setIsHovering] = useState(false);
+  const [selected,setSelected]=useState()
 
-  const handleMouseOver = () => {
+  const handleMouseOver = (id) => {
+    setSelected(id)
     setIsHovering(true);
   };
 
@@ -265,16 +269,18 @@ const Home = () => {
       <section>
         <div>
           <Container fluid>
-            <Row>
-              <Col lg={3}>
+            <Row >
+              {dummy.HomeCategory.map((item,index) => (
+
+              <Col lg={3 } className='mt-4'>
                 <Nav.Link href="pagedetailed">
                   <Card
-                    className="border-0 relative"
-                    onMouseOver={handleMouseOver}
+                    className=" arun border-0 relative "
+                    onMouseOver={()=>handleMouseOver(item.id)}
                     onMouseOut={handleMouseOut}
                   >
-                    <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/d4e2fe175284359.Y3JvcCwyOTQ1LDIzMDQsNTc2LDA.jpg" />
-                    {isHovering && (
+                    <img src={item.image} />
+                    {isHovering && selected ==item.id &&(
                       <div
                         className="absolute   w-100 "
                         style={{
@@ -304,18 +310,14 @@ const Home = () => {
                       <div className="d-flex justify-content-between">
                         <a
                           href="https://pluralsight.com"
-                          className="my-2"
+                          className=" bala my-2"
                           style={{ fontSize: 15 }}
                         >
                           {" "}
-                          HANSKER
+                          {item.name}
+                          {/* {item.userName} */}
                         </a>
-                        {/* {isHovering && (
-          <div>
-            <h2>Only visible when hovering div</h2>
-            <h2>bobbyhadz.com</h2>
-          </div> 
-                       )} */}
+                      
                         <div className="d-flex">
                           <HiOutlineHandThumbUp
                             className="my-2"
@@ -326,14 +328,14 @@ const Home = () => {
                             style={{ fontSize: 12, marginLeft: 5 }}
                           >
                             {" "}
-                            57{" "}
+                             {item.likes} {" "}
                           </p>
                           <AiFillEye
                             className="my-2 ms-2"
                             style={{ width: 16, height: 19 }}
                           />{" "}
                           <p className="ms-1 my-2" style={{ fontSize: 12 }}>
-                            540{" "}
+                            {item.views} {" "}
                           </p>
                         </div>
                       </div>
@@ -341,7 +343,8 @@ const Home = () => {
                   </Card>
                 </Nav.Link>
               </Col>
-
+              ))}
+{/* 
               <Col lg={3}>
                 <Card className="border-0">
                   <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/d44549106242875.Y3JvcCw5MzcsNzMzLDIxNSw1Mw.png" />
@@ -457,12 +460,12 @@ const Home = () => {
                     </div>
                   </div>
                 </Card>
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </div>
       </section>
-
+{/* 
       <section className="my-5">
         <div>
           <Container fluid>
@@ -1281,17 +1284,9 @@ const Home = () => {
             </Row>
           </Container>
         </div>
-      </section>
+      </section> */}
 
-      <div>
-        <a
-          href="https://pluralsight.com"
-          className="my-2"
-          style={{ fontSize: 15 }}
-        >
-          {" "}
-        </a>
-      </div>
+   
     </div>
   );
 };
