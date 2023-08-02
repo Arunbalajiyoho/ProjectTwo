@@ -59,13 +59,13 @@ const Home = () => {
                 {" "}
                 <IoIosNotifications style={{ fontSize: 25 }} />{" "}
               </Nav.Link>
-              <Nav.Link href="#link">
+              <Nav.Link href="login">
                 {" "}
                 <Button style={{ borderRadius: 20 }} variant="light">
                   Log In
                 </Button>{" "}
               </Nav.Link>
-              <Nav.Link href="#link">
+              <Nav.Link href="signup">
                 {" "}
                 <Button style={{ borderRadius: 20 }} variant="primary">
                   Sign Up
