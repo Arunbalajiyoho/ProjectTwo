@@ -268,8 +268,8 @@ const hire = [
       "https://mir-s3-cdn-cf.behance.net/user/100/0100a571415669.6399b80ebc19d.jpg",
     name: "Subha",
     location: "Kudiyana Street,Chennai",
-    Appre: "23.5 k",
-    Foll: 26,
+    Apprecition: "23.5 k",
+    Follow: 26,
     Project: "56.8 k",
 
     categoryName: "Full Time",
@@ -300,8 +300,8 @@ const hire = [
       "https://mir-s3-cdn-cf.behance.net/user/100/4e2c3e428062301.63b4a6ae145b7.png",
     name: "Sonali",
     location: "Kudiyana Street,Malaysia",
-    Appre: "3.5 k",
-    Foll: 26,
+    Apprecition: "3.5 k",
+    Follow: 26,
     Project: "56.8 k",
 
     categoryName: "Freelance",
@@ -332,8 +332,8 @@ const hire = [
       "https://mir-s3-cdn-cf.behance.net/user/100/cd6ddf283526555.6322da3ed1dfd.jpg",
     name: "Arun",
     location: "Palikarani Street,Chennai",
-    Appre: "23.5 k",
-    Foll: 26,
+    Apprecition: "23.5 k",
+    Follow: 26,
     Project: "56.8 k",
 
     categoryName: "FullTime",
@@ -1043,5 +1043,4 @@ const HomeCategory = [
 ];
 
 
-
-export default {HomeCategory}
+export default {hire,HomeCategory,ForYou,discover,Creative,Fulltime,Freelance,Card,Page1}
