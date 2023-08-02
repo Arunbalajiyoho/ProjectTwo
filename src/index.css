@@ -11,6 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .backgroundimage{
    background-image: url("https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&w=1560&h=1150&dpr=1");
   width: 1480px;
@@ -40,3 +41,53 @@ code {
 }
 
 
+/* .swiper {
+  width: 600px;
+  height: 300px;
+} */
+
+
+
+.bl{
+  border-left: 1px solid;
+}
+
+.hov{
+
+  
+}
+
+.butt{
+  border-left: 1px solid;
+}
+
+a{
+  text-decoration:none;
+  color: black;
+}
+
+
+.icon{
+  border-right: 1px solid;
+  
+}
+
+.ex1 {
+  /* overflow-y: scroll; */
+  z-index: inherit;
+}
+.parentDiv {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+
+.card{
+  box-shadow: 0px 0px 0px white;
+  -webkit-transition: box-shadow .6s ease-out;
+  box-shadow: .8px .9px 3px grey;
+}
+.card:hover{
+  box-shadow: 1px 8px 20px white;
+  -webkit-transition: box-shadow .6s ease-in;
+}
