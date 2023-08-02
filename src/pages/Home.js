@@ -40,18 +40,18 @@ const Home = () => {
         <Container fluid>
           <Navbar.Brand
             style={{ fontSize: 30, fontWeight: "bold" }}
-            href="#home"
+            href="/"
           >
             Behance
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">For You</Nav.Link>
-              <Nav.Link href="#link">Discover </Nav.Link>
-              <Nav.Link href="#link">Hire </Nav.Link>
-              <Nav.Link href="#link">Assests </Nav.Link>
-              <Nav.Link href="#link">Jobs </Nav.Link>
+              <Nav.Link href="foryou">For You</Nav.Link>
+              <Nav.Link href="discover">Discover </Nav.Link>
+              <Nav.Link href="hire">Hire </Nav.Link>
+              <Nav.Link href="assets">Assests </Nav.Link>
+              <Nav.Link href="jobs">Jobs </Nav.Link>
             </Nav>
 
             <Nav className="mt-auto align-items-center">
