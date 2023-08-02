@@ -38,10 +38,7 @@ const Home = () => {
     <div>
       <Navbar expand="lg" className="bg-body-white shadow">
         <Container fluid>
-          <Navbar.Brand
-            style={{ fontSize: 30, fontWeight: "bold" }}
-            href="/"
-          >
+          <Navbar.Brand style={{ fontSize: 30, fontWeight: "bold" }} href="/">
             Behance
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -270,67 +267,79 @@ const Home = () => {
           <Container fluid>
             <Row>
               <Col lg={3}>
-                <Card
-                  className="border-0 relative"
-                  onMouseOver={handleMouseOver}
-                  onMouseOut={handleMouseOut}
-                >
-                  <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/d4e2fe175284359.Y3JvcCwyOTQ1LDIzMDQsNTc2LDA.jpg" />
-                 {isHovering &&(
-
-                  <div className="absolute   w-100 " style={{ top:0,position:"absolute",background:"rgba(0, 0, 0, 0.3)",height:290 }}>
-                   <div className="d-flex justify-content-between">
-                   <div className="d-flex bg-dark text-white w-25 rounded-pill align-items-center mt-2 ms-2 "> 
-                   <div className="d-flex mx-auto align-items-center text-center gap-2" style={{height:40}}>
-                   <AiFillFolderOpen className=" " /> <p style={{marginTop:12}}> Save </p> 
-                   </div>
-
-                    </div>
-                    <div>
-                      <img src="https://a5.behance.net/a5cbc1b200679d2c679721a6f349cd3e70a19961/img/galleries/icons/ribbons/1x/graphic-design.png"/>
-                    </div>
-                    </div>
-                  </div>
-                 )}
-                  <div>
-                    <div className="d-flex justify-content-between">
-                      <a
-                        href="https://pluralsight.com"
-                        className="my-2"
-                        style={{ fontSize: 15 }}
+                <Nav.Link href="pagedetailed">
+                  <Card
+                    className="border-0 relative"
+                    onMouseOver={handleMouseOver}
+                    onMouseOut={handleMouseOut}
+                  >
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/d4e2fe175284359.Y3JvcCwyOTQ1LDIzMDQsNTc2LDA.jpg" />
+                    {isHovering && (
+                      <div
+                        className="absolute   w-100 "
+                        style={{
+                          top: 0,
+                          position: "absolute",
+                          background: "rgba(0, 0, 0, 0.3)",
+                          height: 290,
+                        }}
                       >
-                        {" "}
-                        HANSKER
-                      </a>
-                      {/* {isHovering && (
+                        <div className="d-flex justify-content-between">
+                          <div className="d-flex bg-dark text-white w-25 rounded-pill align-items-center mt-2 ms-2 ">
+                            <div
+                              className="d-flex mx-auto align-items-center text-center gap-2"
+                              style={{ height: 40 }}
+                            >
+                              <AiFillFolderOpen className=" " />{" "}
+                              <p style={{ marginTop: 12 }}> Save </p>
+                            </div>
+                          </div>
+                          <div>
+                            <img src="https://a5.behance.net/a5cbc1b200679d2c679721a6f349cd3e70a19961/img/galleries/icons/ribbons/1x/graphic-design.png" />
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                    <div>
+                      <div className="d-flex justify-content-between">
+                        <a
+                          href="https://pluralsight.com"
+                          className="my-2"
+                          style={{ fontSize: 15 }}
+                        >
+                          {" "}
+                          HANSKER
+                        </a>
+                        {/* {isHovering && (
           <div>
             <h2>Only visible when hovering div</h2>
             <h2>bobbyhadz.com</h2>
           </div> 
                        )} */}
-                      <div className="d-flex">
-                        <HiOutlineHandThumbUp
-                          className="my-2"
-                          style={{ width: 16, height: 16 }}
-                        />{" "}
-                        <p
-                          className="ms-1 my-2"
-                          style={{ fontSize: 12, marginLeft: 5 }}
-                        >
-                          {" "}
-                          57{" "}
-                        </p>
-                        <AiFillEye
-                          className="my-2 ms-2"
-                          style={{ width: 16, height: 19 }}
-                        />{" "}
-                        <p className="ms-1 my-2" style={{ fontSize: 12 }}>
-                          540{" "}
-                        </p>
+                        <div className="d-flex">
+                          <HiOutlineHandThumbUp
+                            className="my-2"
+                            style={{ width: 16, height: 16 }}
+                          />{" "}
+                          <p
+                            className="ms-1 my-2"
+                            style={{ fontSize: 12, marginLeft: 5 }}
+                          >
+                            {" "}
+                            57{" "}
+                          </p>
+                          <AiFillEye
+                            className="my-2 ms-2"
+                            style={{ width: 16, height: 19 }}
+                          />{" "}
+                          <p className="ms-1 my-2" style={{ fontSize: 12 }}>
+                            540{" "}
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Card>
+                  </Card>
+                </Nav.Link>
               </Col>
 
               <Col lg={3}>
@@ -1274,29 +1283,15 @@ const Home = () => {
         </div>
       </section>
 
-        
-        <div>
-                       <a
-                        href="https://pluralsight.com"
-                        className="my-2"
-                        style={{ fontSize: 15 }}
-                      >
-                        {" "}
-                         
-                      </a>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
+      <div>
+        <a
+          href="https://pluralsight.com"
+          className="my-2"
+          style={{ fontSize: 15 }}
+        >
+          {" "}
+        </a>
+      </div>
     </div>
   );
 };
