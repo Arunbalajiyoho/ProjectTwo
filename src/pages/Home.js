@@ -282,7 +282,7 @@ const Home = () => {
                     <img src={item.image} />
                     {isHovering && selected ==item.id &&(
                       <div
-                        className="absolute   w-100 "
+                        className="absolute w-100 "
                         style={{
                           top: 0,
                           position: "absolute",
